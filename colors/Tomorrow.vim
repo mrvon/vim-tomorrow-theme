@@ -291,6 +291,15 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("cConditional", s:purple, "", "")
 	call <SID>X("cRepeat", s:purple, "", "")
 
+    " Lua Highlighting
+    call <SID>X("luaStatement", s:purple, "", "")
+    call <SID>X("luaRepeat", s:purple, "", "")
+    call <SID>X("luaFor", s:purple, "", "")
+    call <SID>X("luaIn", s:purple, "", "")
+    call <SID>X("luaCond", s:purple, "", "")
+    call <SID>X("luaElse", s:purple, "", "")
+    call <SID>X("luaFunction", s:purple, "", "")
+
 	" PHP Highlighting
 	call <SID>X("phpVarSelector", s:red, "", "")
 	call <SID>X("phpKeyword", s:purple, "", "")
