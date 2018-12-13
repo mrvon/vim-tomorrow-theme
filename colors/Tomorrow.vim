@@ -17,6 +17,8 @@ let s:aqua = "3e999f"
 let s:blue = "4271ae"
 let s:purple = "8959a8"
 let s:window = "efefef"
+let s:toki = "eea9a9"
+let s:urayanagi = "b5caa0"
 
 set background=light
 hi clear
@@ -356,8 +358,11 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("htmlScriptTag", s:red, "", "")
 
 	" Diff Highlighting
-	call <SID>X("diffAdded", s:green, "", "")
-	call <SID>X("diffRemoved", s:red, "", "")
+	call <SID>X("DiffAdded", "", s:urayanagi, "")
+	call <SID>X("DiffAdd", "", s:urayanagi, "")
+	call <SID>X("DiffDelete", s:background, s:toki, "")
+	call <SID>X("DiffChange", "", s:toki, "")
+	call <SID>X("DiffText", "", s:orange, "")
 
 	" Delete Functions
 	delf <SID>X
