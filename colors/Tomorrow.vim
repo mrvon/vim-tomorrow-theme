@@ -365,7 +365,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("DiffAdd", "", s:urayanagi, "")
 	call <SID>X("DiffDelete", s:background, s:toki, "")
 	call <SID>X("DiffChange", "", s:toki, "")
-	call <SID>X("DiffText", "", s:orange, "")
+	call <SID>X("DiffText", s:foreground, s:orange, "")
 
 	" Delete Functions
 	delf <SID>X
